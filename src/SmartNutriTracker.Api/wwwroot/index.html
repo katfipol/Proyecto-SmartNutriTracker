@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingresar · SmartNutriTracker · Prueba Equipo 4</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="login-wrap">
+    <section class="login-hero">
+      <div class="marca"><span class="logo"><i class="bi bi-flower1"></i></span> SmartNutriTracker</div>
+      <div style="position:relative;z-index:1;max-width:480px">
+        <h1 class="mb-3">Equipo 4 · Registro de Hábitos</h1>
+      </div>
+      <small style="color:var(--snt-300);position:relative;z-index:1">Programación Web III · Proyecto Final</small>
+    </section>
+
+    <section class="login-form">
+      <div class="login-card">
+        <div class="marca mb-4 d-lg-none"><span class="logo"><i class="bi bi-flower1"></i></span> SmartNutriTracker</div>
+        <h2 class="fw-bold mb-1" style="color:var(--snt-900)">Iniciar sesión</h2>
+        <p class="muted mb-4">Versión de prueba del Equipo 4.</p>
+
+        <div id="error" class="alert alert-danger d-none" role="alert"></div>
+
+        <form id="form-login" novalidate>
+          <div class="mb-3">
+            <label class="form-label" for="correo">Correo</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+              <input id="correo" type="email" class="form-control" placeholder="usuario@gmail.com" required autocomplete="username">
+            </div>
+          </div>
+          <div class="mb-4">
+            <label class="form-label" for="password">Contraseña</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-lock"></i></span>
+              <input id="password" type="password" class="form-control" placeholder="••••••••" required autocomplete="current-password">
+              <button class="btn btn-outline-secondary" type="button" id="ver-password" title="Mostrar contraseña"><i class="bi bi-eye"></i></button>
+            </div>
+          </div>
+          <button class="btn btn-primary w-100 py-2 fw-semibold" type="submit" id="btn-ingresar">
+            <span class="spinner-border spinner-border-sm d-none me-2" id="spinner"></span>Ingresar
+          </button>
+        </form>
+
+        <div class="mt-4 p-3 rounded-3" style="background:var(--snt-50);border:1px solid var(--snt-borde)">
+          <div class="small fw-semibold mb-2" style="color:var(--snt-800)"><i class="bi bi-info-circle"></i> Cuentas de prueba (contraseña: Innovare2026!)</div>
+          <div class="d-flex flex-wrap gap-2 cuentas-demo">
+            <button class="btn btn-sm btn-outline-primary" data-correo="carla.flores@innovare.edu.bo">Estudiante (Carla)</button>
+            <button class="btn btn-sm btn-outline-primary" data-correo="luis.quispe@innovare.edu.bo">Estudiante (Luis)</button>
+            <button class="btn btn-sm btn-outline-primary" data-correo="jvargas@innovare.edu.bo">Docente</button>
+            <button class="btn btn-sm btn-outline-primary" data-correo="nutricion@innovare.edu.bo">Nutricionista</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>
