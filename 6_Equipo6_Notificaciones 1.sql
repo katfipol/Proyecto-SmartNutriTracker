@@ -1,12 +1,4 @@
-/* =====================================================================
-   SmartNutriTracker - Colegio "Innovare"
-   EQUIPO 6 - NOTIFICACIONES Y TESTING
-   HU-27, HU-28 · Tipos de alerta, alertas, notificaciones internas y citas nutricionales
-   Motor: SQL Server 2019+ / SQL Server Express
-
-   ORDEN DE EJECUCIÓN (base nueva): Equipo1 → Equipo2 → Equipo3 → Equipo4 → Equipo5 → Equipo6
-   Requiere: Equipos 1 a 5. Es el último script: deja el sistema completo.
-   ===================================================================== */
+/*EQUIPO 6 - NOTIFICACIONES Y TESTING*/
 
 IF DB_ID(N'SmartNutriTrackerDB') IS NULL
 BEGIN
